@@ -1,0 +1,191 @@
+/* ========================
+   ESTILOS GENERALES
+======================== */
+body {
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h5 {
+  font-weight: 600;
+}
+
+.large-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+/* Links generales */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+/* ========================
+   HEADER
+======================== */
+.social-icons {
+  margin-left: 50px;
+  display: flex;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.social-icons i:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon svg path {
+  transition: stroke 0.3s ease, transform 0.3s ease;
+  stroke: #333;
+}
+
+.menu-icon:hover svg path {
+  stroke: #007bff;
+  transform: scale(1.1);
+}
+
+/* ========================
+   MAIN - CONTENIDO PRINCIPAL
+======================== */
+main {
+  flex: 1;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Iconos de las características */
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Colores de fondo */
+.bg-light-green {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.bg-light-pink {
+  background-color: rgba(255, 192, 203, 0.1);
+}
+
+/* Enlaces personalizados */
+.custom-link {
+  color: black;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.rotated-arrow {
+  display: inline-block;
+  transform: rotate(300deg);
+  transition: transform 0.3s ease;
+}
+
+.custom-link:hover .rotated-arrow {
+  transform: rotate(300deg) translateX(5px);
+}
+
+.underlined-part {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  background-color: #f8f9fa;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* ========================
+   MEDIA QUERIES - RESPONSIVE
+======================== */
+@media (max-width: 991px) {
+  .image-container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .large-text {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
